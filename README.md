@@ -59,6 +59,7 @@ git difftool title-change
 # Merge 
 git merge <branch-name>  // fast-forward
 git merge --no-ff // no fast-forward - use editor
+git mergetool
 
 
 Thanks,
