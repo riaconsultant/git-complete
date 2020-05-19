@@ -47,7 +47,7 @@ git checkout <branch-name> // switch the brach
 git branch -mv <old-branch-name> <new-branch-name> // remane the branch
 git branch -d <branch-name>
 git branch // show local branch
-git checkout -b <new-branch> // checkout and create new branch
+git checkout -b <new-branch> // checkout and create switch in new branch
 
 git remote add origin <url>
 git push -u origin master
