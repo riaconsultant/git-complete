@@ -62,5 +62,8 @@ git merge --no-ff // no fast-forward - use editor
 git mergetool
 
 
+Adding the line for rebase changes
+
+
 Thanks,
 Manoj
