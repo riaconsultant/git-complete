@@ -52,3 +52,9 @@ git checkout -b <new-branch> // checkout and create switch in new branch
 git remote add origin <url>
 git push -u origin master
 
+# Diff
+git diff master title-change
+git difftool title-change
+
+Thanks,
+Manoj
