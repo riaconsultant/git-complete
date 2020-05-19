@@ -61,6 +61,8 @@ git merge <branch-name>  // fast-forward
 git merge --no-ff // no fast-forward - use editor
 git mergetool
 
+# Rebase
+git rebase master
 
 Adding the line for rebase changes
 
