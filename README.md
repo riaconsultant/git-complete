@@ -63,7 +63,15 @@ git mergetool
 
 # Rebase
 git rebase master
+git rebase master --abort
 
+# Stash
+git stash
+git stash apply
+git stash list
+git stash -u // include untracked file  
+git stash drop  // drop last from stash list
+git stash pop // 
 Adding the line for rebase changes
 
 
