@@ -1,37 +1,113 @@
-## Welcome to GitHub Pages
+# Welcome to GIT Complete commands
 
-You can use the [editor on GitHub](https://github.com/riaconsultant/git-complete/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+## .gitconfig file Changes
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+- [user]\
+    - name = 'Manoj Chaurasiya'
+    - email =
+- [core]\
+    - editor = mate -w
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+# <span style="color:green">Start</span>
 
-### Jekyll Themes
+```
+git init
+git staus
+git add . | <file-name>
+git add -A   // in case of delete, move or rename the file from the OS level.
+git commit -m "message"
+git push
+git push -f // forcefully
+git push origin master
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/riaconsultant/git-complete/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+# Checkout
 
-### Support or Contact
+```
+git checkout <branch-name>
+git checkout -- <file-name>
+```
+
+# Log
+
+```
+git log
+git log --abbrev-commit // 7 Character Unique values
+git log --oneline --graph --decorate --all
+git log <commitId1>...<commitId10>
+git log --since="3days ago"
+git log -- <file-name>
+git log --follow -- path
+git show <commitId>
+```
+
+# Pull
+
+```
+git pull origin master
+```
+
+# Alias
+
+```
+git config --global alias.hist "log --all --oneline --graph --decorate"
+~/.gitconfig
+[alias]
+hist = "log --all --oneline --graph --decorate"
+```
+
+# Branching
+
+```
+git branch -a // show all local and remote branches
+git branch <branch-name> // create new branch
+git checkout <branch-name> // switch the brach
+git branch -mv <old-branch-name> <new-branch-name> // remane the branch
+git branch -d <branch-name>
+git branch // show local branch
+git checkout -b <new-branch> // checkout and create switch in new branch
+
+git remote add origin <url>
+git push -u origin master
+```
+
+# <span style="color:blue">Diff</span>
+
+```
+git diff master title-change
+git difftool title-change
+```
+
+# Merge
+
+```
+git merge <branch-name> // fast-forward
+git merge --no-ff // no fast-forward - use editor
+git mergetool
+```
+
+# <span style="color:yellow">Rebase</span>
+
+```
+git rebase master
+git rebase master --abort
+```
+
+# <span style="color:red">Stash</span>
+
+```
+git stash
+git stash apply
+git stash list
+git stash -u // include untracked file
+git stash drop // drop last from stash list
+git stash pop // Adding the line for rebase changes
+```
+
+## Thanks,
+
+## <span style="color:orange"> Manoj </span>
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
