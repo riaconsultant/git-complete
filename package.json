@@ -1,0 +1,30 @@
+{
+  "name": "git-complete",
+  "version": "1.0.0",
+  "description": "```\r - [user]\\\r     - name = 'Manoj Chaurasiya'\r     - email =\r - [core]\\\r     - editor = mate -w\r ```",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riaconsultant/git-complete.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riaconsultant/git-complete/issues"
+  },
+  "homepage": "https://github.com/riaconsultant/git-complete#readme",
+  "dependencies": {
+    "jsonfile": "^6.1.0",
+    "moment": "^2.29.1",
+    "random": "^3.0.6",
+    "simple-git": "^2.47.0"
+  }
+}
