@@ -61,7 +61,7 @@ hist = "log --all --oneline --graph --decorate"
 # Branching
 
 ```
-git branch -a // show all local and remote branches
+git branch -a   // show all local and remote branches
 git branch <branch-name> // create new branch
 git checkout <branch-name> // switch the brach
 git branch -mv <old-branch-name> <new-branch-name> // remane the branch
@@ -76,8 +76,26 @@ git push -u origin master
 # <span style="color:blue">Diff</span>
 
 ```
+Configure the pmerge tool in git bash
+git config --global merge.tool p4merge
+git config --global mergetool.p4merge.path "C:/Program Files/Perforce/p4merge.exe"
+git config --global mergetool.prompt false
+
+git config --global diff.tool p4merge
+git config --global difftool.p4merge.path "C:/Program Files/Perforce/p4merge.exe"
+git config --global difftool.prompt false
+```
+
+```
 git diff master title-change
 git difftool title-change
+git difftool
+```
+
+// difference between local branch to remote branch
+
+```
+git diff master origin/master
 ```
 
 # Merge

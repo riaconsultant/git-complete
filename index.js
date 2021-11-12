@@ -13,7 +13,7 @@ const data = {
     label: "Test Data",
     date: DATE
 }
-console.log(DATE);
+console.log('Num: ', n, DATE);
 jsonfile.writeFile(FILE_PATH, data, () => {
     // git commit --date=""
     simpleGit().add([FILE_PATH]).commit(DATE, { '--date': DATE }, 
@@ -22,4 +22,4 @@ jsonfile.writeFile(FILE_PATH, data, () => {
 
 }
 
-makeCommit(280);
+makeCommit(10);

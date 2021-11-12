@@ -18,6 +18,8 @@ git staus
 git add . | <file-name>
 git add -A   // in case of delete, move or rename the file from the OS level.
 git commit -m "message"
+    or
+git commit -am "message"  // add + commit
 git push
 git push -f // forcefully
 git push origin master
@@ -64,8 +66,11 @@ hist = "log --all --oneline --graph --decorate"
 git branch -a // show all local and remote branches
 git branch <branch-name> // create new branch
 git checkout <branch-name> // switch the brach
+    or
+git checkout -b <new-branch-name>
+
 git branch -mv <old-branch-name> <new-branch-name> // remane the branch
-git branch -d <branch-name>
+git branch -d <branch-name> // delete the branch
 git branch // show local branch
 git checkout -b <new-branch> // checkout and create switch in new branch
 
@@ -76,14 +81,15 @@ git push -u origin master
 # <span style="color:blue">Diff</span>
 
 ```
-git diff master title-change
+git diff master-branch title-change-branch  // command prompt
+git difftool master-branch title-change-branch  // visually
 git difftool title-change
 ```
 
 # Merge
 
 ```
-git merge <branch-name> // fast-forward
+master-branch > git merge <branch-name> // fast-forward code will merge to master branch from the branch-name
 git merge --no-ff // no fast-forward - use editor
 git mergetool
 ```
