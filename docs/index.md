@@ -124,6 +124,12 @@ git stash drop // drop last from stash list
 git stash pop // Adding the line for rebase changes
 ```
 
+# <span style="color:aqua">Tag</span>
+
+```
+
+```
+
 ## Thanks,
 
 ## <span style="color:orange"> Manoj </span>
